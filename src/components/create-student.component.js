@@ -3,6 +3,7 @@ import axios from "axios";
 
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
+import Card from "react-bootstrap/Card";
 
 export default class CreateStudent extends Component {
   constructor(props) {
@@ -47,6 +48,12 @@ export default class CreateStudent extends Component {
   render() {
     return (
       <div class="form-wrapper">
+        <Card style={{ width: "31rem" }}>
+          <Card.Img
+            variant="top"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFhQovxHXuw9Eikb4a632_jI9zYI_O6dUrgA&usqp=CAU"
+          />
+        </Card>
         <Form onSubmit={this.onSubmit}>
           <Form.Group controlId="Name">
             <Form.Label>Nombre</Form.Label>
